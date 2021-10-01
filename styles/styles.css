@@ -1,0 +1,147 @@
+/* --bg-grey: #ebebeb;
+  --bg-body: #253b52;
+  --text-blue: #253b52;
+  --text-card: #222832;
+  --title-blue: #30475e;
+  --accent: #f05454;
+  --accent-two: #f76868; */
+.container {
+  max-width: 1140px;
+  margin: 3.75rem auto 0;
+  padding: 0 1.875rem;
+}
+.call-to-action {
+  font-family: "Righteous", monospace, sans-serif;
+  color: var(--accent-two);
+  font-size: 1.125rem;
+  transition: 0.2s;
+  margin-right: 1.875rem;
+}
+.call-to-action:hover {
+  color: #bf2828;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+.navbar ul {
+  display: flex;
+  /* margin: 0 auto; */
+  gap: 2.5rem;
+}
+.navbar a {
+  color: var(--text-blue);
+  font-size: 1.125rem;
+  font-family: "Righteous", monospace, sans-serif;
+  transition: 0.2s;
+}
+.navbar a:hover {
+  color: #51677d;
+}
+header {
+  display: flex;
+  gap: 2.5rem;
+}
+header .content span {
+  display: block;
+  font-family: "Righteous", monospace, sans-serif;
+  font-size: 1.125rem;
+  color: var(--accent-two);
+}
+header .content h1 {
+  font-family: "Source Serif Pro", georgia, serif;
+  font-weight: 700;
+  line-height: 4.06rem;
+  color: var(--title-blue);
+  font-size: 4rem;
+  margin-top: 1.875rem;
+}
+header .content p {
+  margin: 1.875rem 0;
+  font-family: "Source Sans Pro";
+  color: var(--text-blue);
+  font-size: 0.875rem;
+}
+
+header .image-intro img {
+  border: 5px solid #30475e;
+}
+.bg-atendimento {
+  background: var(--bg-body);
+}
+.bg-atendimento .atendimento {
+  margin-top: -4rem;
+}
+.bg-atendimento .atendimento::after {
+content:'';
+display: block;
+width: 100%;
+height: 2px;
+background: #51677d;
+margin-top: 3.75rem;
+}
+.bg-atendimento .atendimento h2 {
+  padding-top: 1.875rem;
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  color: #ebebeb;
+}
+.bg-atendimento .atendimento .card {
+  display: flex;
+  margin-top: 1.875rem;
+  gap: 1.25rem;
+}
+.bg-atendimento .atendimento .card .box {
+  background: var(--bg-grey);
+  border: 5px solid #cdcfd1;
+  padding: 0.9375rem;
+}
+.bg-atendimento .atendimento .card .box h3 {
+  text-align: center;
+  color: var(--accent);
+  font-family: "Righteous", monospace;
+  font-weight: normal;
+}
+.bg-atendimento .atendimento .card .box li {
+  margin-top: 1.25rem;
+  color: var(--text-card);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul h4 {
+  font-family: "Righteous", monospace, sans-serif;
+  font-size: 1.125rem;
+  font-weight: normal;
+  color: #ebebeb;
+}
+footer ul li {
+  font-family: "Righteous", monospace, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #cdcfd1;
+  margin-top: 0.9375rem;
+}
+footer ul li a {
+  color: #cdcfd1;
+  transition: 0.2s;
+}
+footer ul li a:hover {
+  color: #ebebeb;
+}
+footer ul .redes-sociais {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.9375rem;
+}

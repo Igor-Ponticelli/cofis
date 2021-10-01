@@ -6,14 +6,14 @@
   --accent: #f05454;
   --accent-two: #f76868; */
 .container {
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 3.75rem auto 0;
   padding: 0 1.875rem;
 }
 .call-to-action {
   font-family: "Righteous", monospace, sans-serif;
   color: var(--accent-two);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   transition: 0.2s;
   margin-right: 1.875rem;
 }
@@ -47,6 +47,7 @@ img {
 header {
   display: flex;
   gap: 2.5rem;
+  justify-content: space-between;
 }
 header .content span {
   display: block;
@@ -61,59 +62,81 @@ header .content h1 {
   color: var(--title-blue);
   font-size: 4rem;
   margin-top: 1.875rem;
+  max-width: 700px;
 }
 header .content p {
   margin: 1.875rem 0;
   font-family: "Source Sans Pro";
   color: var(--text-blue);
-  font-size: 0.875rem;
+  font-size: 1.25rem;
+  max-width: 600px;
 }
-
 header .image-intro img {
   border: 5px solid #30475e;
 }
 .bg-atendimento {
   background: var(--bg-body);
-}
-.bg-atendimento .atendimento {
-  margin-top: -4rem;
+  padding-bottom: 3.75rem;
 }
 .bg-atendimento .atendimento::after {
-content:'';
-display: block;
-width: 100%;
-height: 2px;
-background: #51677d;
-margin-top: 3.75rem;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #51677d;
+  margin-top: 3.75rem;
 }
 .bg-atendimento .atendimento h2 {
   padding-top: 1.875rem;
   font-family: "Source Sans Pro";
   font-weight: 500;
+  font-size: 1.625rem;
   color: #ebebeb;
 }
 .bg-atendimento .atendimento .card {
   display: flex;
-  margin-top: 1.875rem;
-  gap: 1.25rem;
+  margin-top: 3.75rem;
+  gap: 1.875rem;
 }
 .bg-atendimento .atendimento .card .box {
   background: var(--bg-grey);
   border: 5px solid #cdcfd1;
-  padding: 0.9375rem;
+  padding: 1.875rem;
 }
 .bg-atendimento .atendimento .card .box h3 {
   text-align: center;
   color: var(--accent);
   font-family: "Righteous", monospace;
   font-weight: normal;
+  font-size: 1.25rem;
 }
 .bg-atendimento .atendimento .card .box li {
   margin-top: 1.25rem;
   color: var(--text-card);
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
+}
+.bg-atendimento .atendimento .card .box .circle {
+  display: flex;
+  align-items: center;
+}
+.bg-atendimento .atendimento .card .box .circle-orange {
+  content: "";
+  display: flex;
+  background: #f76868;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  margin-right: 4px;
+}
+.bg-atendimento .atendimento .card .box .circle-green {
+  content: "";
+  display: flex;
+  background: #73d67d;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  margin-right: 4px;
 }
 footer {
   display: flex;
@@ -123,11 +146,19 @@ footer ul h4 {
   font-family: "Righteous", monospace, sans-serif;
   font-size: 1.125rem;
   font-weight: normal;
-  color: #ebebeb;
+  color: #cdcfd1;
+}
+footer ul h4::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #f76868;
+  margin-top: 5px;
 }
 footer ul li {
-  font-family: "Righteous", monospace, sans-serif;
-  font-size: 0.875rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.125rem;
   font-weight: normal;
   color: #cdcfd1;
   margin-top: 0.9375rem;
@@ -137,11 +168,17 @@ footer ul li a {
   transition: 0.2s;
 }
 footer ul li a:hover {
-  color: #ebebeb;
+  opacity: 0.6;
 }
 footer ul .redes-sociais {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.9375rem;
+}
+footer ul .redes-sociais li a svg {
+  transition: 0.2s;
+}
+footer ul .redes-sociais li a svg:hover {
+  opacity: 0.6;
 }
